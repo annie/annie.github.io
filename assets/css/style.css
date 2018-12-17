@@ -1,0 +1,40 @@
+/**
+ * Reset some basic elements
+ */
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #F6F6F6;
+  font-family: 'Vollkorn', serif;
+  font-size: 24px;
+}
+
+p {
+  margin-bottom: 3%;
+}
+
+a, a:visited {
+  color: #F25757;
+  text-decoration: none;
+}
+
+#container {
+  padding: 8% 20%;
+  width: 50%;
+}
+
+#me {
+  border: 3px solid black;
+  cursor: move;
+  background-color: white;
+  height: 80px;
+  position: absolute;
+  visibility: hidden;
+  width: 80px;
+  z-index: 99999;
+}
