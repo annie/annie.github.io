@@ -22,13 +22,21 @@ a, a:visited {
   text-decoration: none;
 }
 
-.flex-grid {
-  display: block;
+.container {
   padding: 8% 8%;
 }
 
 .col {
   flex: 1;
+}
+
+.back-button {
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.sketch {
+  max-width: 100%;
 }
 
 #me {
@@ -44,9 +52,16 @@ a, a:visited {
     margin-bottom: 2%;
   }
 
+  .container {
+    padding: 6% 8%;
+  }
+
   .flex-grid {
     display: flex;
-    padding: 6% 8%;
+  }
+
+  .sketch {
+    max-width: 50%;
   }
 
   #me {
