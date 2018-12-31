@@ -1,6 +1,9 @@
-(function setupListeners() {
-  console.log(document.getElementById('me-link'));
-  document.getElementById('me-link').addEventListener('click', togglePhoto);
+(function setup() {
+  if (!isMobile()) {
+    var annieLink = document.getElementById('annie');
+    annieLink.style.color = '#F25757';
+    annieLink.addEventListener('click', togglePhoto);
+  }
 })();
 
 function togglePhoto() {
@@ -10,6 +13,10 @@ function togglePhoto() {
   } else {
     photo.style.visibility = 'visible';
   }
+}
+
+function isMobile() {
+  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 }
 
 /*
