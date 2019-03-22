@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
+  </head>
+  <body>
+    <div class="back-button">
+      <a href="/index.html">
+        <h1>
+          <
+        </h1>
+      </a>
+    </div>
+    <div class="container">
+      <h2>{{ page.title }}</h2>
+      I draw a lot in my off-time and wanted to start saving those drawings. I use Post-its because I like the size and dimensional constraints. Most drawings are made using Micron 02 and 03 pens (gifted to me by my coworker Mayank after he saw me doodling one day - thanks dude).
+      <br></br>
+      <div>2018</div>
+      {% for image in site.static_files reversed %}
+        {% if image.path contains 'assets/sketches' %}
+          <img class="sketch" src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+        {% endif %}
+      {% endfor %}
+    </div>
+  </body>
+</html>

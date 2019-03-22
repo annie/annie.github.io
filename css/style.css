@@ -1,0 +1,75 @@
+/**
+ * Reset some basic elements
+ */
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Andale Mono', 'Space Mono', sans-serif;
+  font-size: 14px;
+}
+
+p {
+  margin-bottom: 5%;
+}
+
+a, a:visited {
+  color: #F25757;
+  text-decoration: none;
+}
+
+.container {
+  padding: 8% 8%;
+}
+
+.col {
+  flex: 1;
+}
+
+.back-button {
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.sketch {
+  max-width: 100%;
+}
+
+#me {
+  visibility: hidden;
+}
+
+@media only screen and (min-width: 500px) {
+  body {
+    font-size: 16px;
+  }
+
+  p {
+    margin-bottom: 2%;
+  }
+
+  .container {
+    padding: 6% 8%;
+  }
+
+  .flex-grid {
+    display: flex;
+  }
+
+  .sketch {
+    max-width: 50%;
+  }
+
+  #me {
+    border: 3px solid black;
+    cursor: move;
+    background-color: white;
+    height: 80px;
+    width: 80px;
+    z-index: 99999;
+  }
+}

@@ -24,30 +24,32 @@
       {"name":"Your awesome title","description":"Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.","@type":"WebSite","url":"http://localhost:4000/","headline":"Your awesome title","@context":"http://schema.org"}
     </script>
     <!-- End Jekyll SEO tag -->
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Your awesome title" />
-    <link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
   </head>
-
   <body>
-    <div id="container">
-      <p>Hello! I'm <a id="me-link" href="#">Annie</a>. I am a programmer based in San
-        Francisco.</p>
-      <div id="me">hey</div>
-      <p>I spend my working hours as a software engineer at Facebook, where I
-        build products for people in emerging markets.</p>
-      <p>In my non-working hours, I am currently
-        <br>... learning about the <a href="#">distributed web</a>
-        <br>... building a <a href="#">drum machine</a>
-        <br>... making <a href="#">sketches</a> with Post-Its
-      </p>
-      <p>Previously, I was a 2017 <a href="https://apply.hackny.org/">hackNY Fellow</a>
-        and graduated from Columbia University with a B.S. in Computer Science.
-        For more about me, see my <a href="#">CV</a>.
-      </p>
-      <p>I also like to track <a href="https://www.goodreads.com/user/show/4337420-annie-zhang">
-        books</a> I read and <a href="https://letterboxd.com/luck_bamboo/">movies</a> I watch.
+    <div class="container flex-grid">
+      <div class="col">
+        <p>Hello! I'm Annie. I am a programmer based in San
+          Francisco.</p>
+        <p>In my working hours, I build products at Facebook for people in emerging markets.</p>
+        <p>In my non-working hours, I am currently
+          <br>... learning about the <a href="https://github.com/annie/distributed-web-resources">distributed web</a>
+          <br>... making sketches with <a href="/sketches.html">Post-its</a>
+        </p>
+        <p>You can find me on <a href="https://twitter.com/luck_bamboo">Twitter</a>, <a href="https://www.goodreads.com/user/show/4337420-annie-zhang">
+          Goodreads</a>, and <a href="https://letterboxd.com/luck_bamboo/">Letterboxd</a>.</p>
+        <p>---</p>
+        <p>Previously, I was a 2017 <a href="https://apply.hackny.org/">hackNY Fellow</a>
+          and graduated from Columbia University with a B.S. in Computer Science.
+          For a more complete history, see my <a href="/assets/resume-2018.pdf">resume</a>.
+        </p>
+      </div>
+      <div class="col">
+        <div id="me">hey</div>
+      </div>
     </div>
-    <script type="text/javascript" src="/assets/js/main.js"></script>
+    <script type="text/javascript" src="/js/main.js"></script>
   </body>
 </html>
